@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela N°168 - 2 de Abril</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px; /* Tamaño reducido para móviles */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px; /* Menos margen para móviles */
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px; /* Tamaño de fuente reducido */
+        }
+
+        section {
+            padding: 15px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        section h2 {
+            color: #4CAF50;
+            font-size: 20px; /* Tamaño reducido para móviles */
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .card {
+            width: 30%; /* Ancho de las tarjetas en pantallas grandes */
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .card p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative; /* Cambiado a relative para móviles */
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Media Queries para dispositivos móviles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 20px; /* Tamaño más pequeño para móviles */
+            }
+
+            nav ul li {
+                display: block; /* Menú en columna para móviles */
+                margin: 5px 0;
+            }
+
+            .card {
+                width: 100%; /* Tarjetas ocupan todo el ancho */
+            }
+
+            section {
+                padding: 10px;
+                margin: 5px;
+            }
+
+            footer {
+                position: relative; /* Footer no fijo en móviles */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 18px; /* Tamaño aún más pequeño para pantallas muy pequeñas */
+            }
+
+            nav ul li a {
+                font-size: 12px; /* Tamaño de fuente más pequeño */
+            }
+
+            section h2 {
+                font-size: 18px; /* Tamaño reducido para móviles */
+            }
+
+            .card p {
+                font-size: 12px; /* Texto más pequeño en tarjetas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Escuela N° 168 - 2 de Abril</h1>
+        <nav>
+            <ul>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#trabajos">Trabajos de Alumnos</a></li>
+                <li><a href="#ferias">Ferias de Ciencias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="historia">
+        <h2>Historia de la Escuela</h2>
+        <p>La Escuela N°168 2 de Abril fue fundada en .... con el objetivo de brindar educación de calidad a los niños de la comunidad. Desde entonces, hemos crecido y evolucionado, manteniendo siempre nuestro compromiso con la excelencia educativa.</p>
+        <img src="historia.jpg" alt="Historia de la Escuela">
+    </section>
+
+    <section id="trabajos">
+        <h2>Trabajos Realizados por los Alumnos</h2>
+        <div class="gallery">
+            <div class="card">
+                <img src="trabajo1.jpg" alt="Trabajo 1">
+                <p>Descripción del trabajo 1 realizado por los alumnos.</p>
+            </div>
+            <div class="card">
+                <img src="trabajo2.jpg" alt="Trabajo 2">
+                <p>Descripción del trabajo 2 realizado por los alumnos.</p>
+            </div>
+            <div class="card">
+                <img src="trabajo3.jpg" alt="Trabajo 3">
+                <p>Descripción del trabajo 3 realizado por los alumnos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="ferias">
+        <h2>Ferias de Ciencias</h2>
+        <p>Nuestros alumnos participan activamente en ferias de ciencias, donde presentan proyectos innovadores y creativos. Aquí hay algunos de los proyectos destacados:</p>
+        <div class="gallery">
+            <div class="card">
+                <img src="feria1.jpg" alt="Proyecto 1">
+                <p>Descripción del proyecto 1 presentado en la feria de ciencias.</p>
+            </div>
+            <div class="card">
+                <img src="feria2.jpg" alt="Proyecto 2">
+                <p>Descripción del proyecto 2 presentado en la feria de ciencias.</p>
+            </div>
+            <div class="card">
+                <img src="feria3.jpg" alt="Proyecto 3">
+                <p>Descripción del proyecto 3 presentado en la feria de ciencias.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Escuela N° 168 2 de Abril - Caraguatay - Montecarlo - Misiones. Todos los derechos reservados.</p>
+        <p>Desarrollado por: Sebastián Gómez - Contacto: 3751316169</p>
+    </footer>
+
+    <script>
+        // JavaScript para interactividad
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ejemplo de interactividad: Cambiar el color del título al hacer clic
+            const titulo = document.querySelector('header h1');
+            titulo.addEventListener('click', function() {
+                titulo.style.color = titulo.style.color === 'red' ? 'white' : 'red';
+            });
+        });
+    </script>
+</body>
+</html>
